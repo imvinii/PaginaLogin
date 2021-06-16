@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{ 
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    }
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(45deg, #440a67, #9d37a8, #4c3dd6 );
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colors 15s ease infinite;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+main.container{
+    background: white;
+    max-width: 350px;
+    min-height: 45vh;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.inputField input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+form .inputField:first-child{
+    margin-bottom: 1rem;
+}
+
+.inputField input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form button{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background-color: #8E2DE2;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.8s ease;
+}
+
+form button:hover{
+    letter-spacing: 0.5px;
+    background-color: #984adb;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .socialFields{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85;
+    width: 300px;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.footer .socialFields a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .socialFields a i{
+    margin: 0 0.5;
+    width: 20px;
+}
+
+.footer .socialFieldTwitter{
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85;
+    width: 277px;
+    cursor: pointer;
+}
+
+
+.footer .socialFieldFacebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin-top: 1rem;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85;
+    width: 277px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.options{
+    text-align: center;
+    padding-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
